@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maindiv">
+        <div class="childdiv">
+            <h1>DARK MODE</h1>
+            <div class="subdiv">
+                <button class="btnFadeIn">Dark Mode #1</button>
+                   <p class="p1">This Mode has balck background and white color</p>
+                <button class="btnFadeIn1">Dark Mode #2</button>
+                   <p class="p2">This Mode has black background and blue color</p>
+                <button class="btnFadeIn2">Dark Mode #3</button>
+                   <p class="p3">This Mode has balck background and green color</p>
+                <button class="btnFadeIn3">Dark Mode #4</button>
+                   <p class="p4">This Mode has balck background and cadetblue color</p>
+
+            </div>
+        </div>
+        <div class="childdiv1">
+            <div class="col1">
+                <h1>Section 1</h1>
+            </div>
+            <div class="col2">
+                <h1>Section 2</h1>
+            </div>
+            <div class="col3">
+                <h1>Section 3</h1>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <!-- jQuery CDN  -->
+
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"
+></script>
+
+ <!-- CSS script  -->
+  <script>
+     $("body").css({backgroundColor: "white", color:"black"})
+  </script>
+
+  <!-- jQuery script  -->
+  <script>
+    $(document).ready(function () {
+
+
+        $(".btnFadeIn").click(function () {
+                $(".p1").fadeOut(1000);
+                $("body").css({backgroundColor: "black" ,color:"white"})
+                $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"white"})
+            })
+        $(".btnFadeIn1").click(function () {
+                $(".p2").fadeToggle(1000);
+                $("body").css({backgroundColor: "black" ,color:"green"})
+                $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"green"})
+            })
+        $(".btnFadeIn2").click(function () {
+                $(".p3").fadeToggle(1000);
+                $("body").css({backgroundColor: "black" ,color:"blue"})
+                $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"blue"})
+            })    
+        $(".btnFadeIn3").click(function () {
+                $(".p4").fadeToggle(1000);
+                $("body").css({backgroundColor: "black" ,color:"red"})
+                $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"red"})
+            })    
+
+
+                
+        
+    })
+  </script>
+</body>
+</html>
