@@ -12,13 +12,21 @@
             <h1>DARK MODE</h1>
             <div class="subdiv">
                 <button class="btnFadeIn">Dark Mode #1</button>
-                   <p class="p1">This Mode has balck background and white color</p>
+                   <p class="p1">This Mode has balck background and white color
+                    <button class="btn1">Click Me</button>
+                   </p>
                 <button class="btnFadeIn1">Dark Mode #2</button>
-                   <p class="p2">This Mode has black background and blue color</p>
+                   <p class="p2">This Mode has black background and blue color
+                    <button class="btn2">Click Me</button>
+                   </p>
                 <button class="btnFadeIn2">Dark Mode #3</button>
-                   <p class="p3">This Mode has balck background and green color</p>
+                   <p class="p3">This Mode has balck background and green color
+                    <button class="btn3">Click Me</button>
+                   </p>
                 <button class="btnFadeIn3">Dark Mode #4</button>
-                   <p class="p4">This Mode has balck background and cadetblue color</p>
+                   <p class="p4">This Mode has balck background and cadetblue color
+                    <button class="btn4">Click Me</button>
+                   </p>
 
             </div>
         </div>
@@ -62,22 +70,39 @@ crossorigin="anonymous"
 
 
         $(".btnFadeIn").click(function () {
-                $(".p1").fadeOut(1000);
+                $(".p1").toggle(1000);
+            })
+
+        $(".btn1").click(function () {
                 $("body").css({backgroundColor: "black" ,color:"white"})
                 $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"white"})
             })
+            
+            
         $(".btnFadeIn1").click(function () {
-                $(".p2").fadeToggle(1000);
+                $(".p2").toggle(1000);
+            })
+
+        $(".btn2").click(function () {
                 $("body").css({backgroundColor: "black" ,color:"green"})
                 $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"green"})
             })
+
+
         $(".btnFadeIn2").click(function () {
-                $(".p3").fadeToggle(1000);
+                $(".p3").toggle(1000);
+            })    
+        $(".btn3").click(function () {
                 $("body").css({backgroundColor: "black" ,color:"blue"})
                 $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"blue"})
             })    
+
+
+
         $(".btnFadeIn3").click(function () {
                 $(".p4").fadeToggle(1000);
+            })  
+            $(".btn4").click(function () {
                 $("body").css({backgroundColor: "black" ,color:"red"})
                 $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"red"})
             })    
