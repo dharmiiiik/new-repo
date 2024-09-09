@@ -48,5 +48,20 @@ h1{
 .p1{
     background-color: black;
     color: white;
-
+    display: none;
+}
+.p2{
+    background-color: black;
+    color: white;
+    display: none;
+}
+.p3{
+    background-color: black;
+    color: white;
+    display: none;
+}
+.p4{
+    background-color: black;
+    color: white;
+    display: none;
 }
