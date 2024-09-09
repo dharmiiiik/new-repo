@@ -12,19 +12,19 @@
             <h1>DARK MODE</h1>
             <div class="subdiv">
                 <button class="btnFadeIn">Dark Mode #1</button>
-                   <p class="p1">This Mode has balck background and white color
+                   <p class="p1">This Mode has black background and white color
                     <button class="btn1">Click Me</button>
                    </p>
                 <button class="btnFadeIn1">Dark Mode #2</button>
-                   <p class="p2">This Mode has black background and blue color
+                   <p class="p2">This Mode has black background and green color
                     <button class="btn2">Click Me</button>
                    </p>
                 <button class="btnFadeIn2">Dark Mode #3</button>
-                   <p class="p3">This Mode has balck background and green color
+                   <p class="p3">This Mode has black background and blue color
                     <button class="btn3">Click Me</button>
                    </p>
                 <button class="btnFadeIn3">Dark Mode #4</button>
-                   <p class="p4">This Mode has balck background and cadetblue color
+                   <p class="p4">This Mode has black background and cadetblue color
                     <button class="btn4">Click Me</button>
                    </p>
 
@@ -86,6 +86,8 @@ crossorigin="anonymous"
         $(".btn2").click(function () {
                 $("body").css({backgroundColor: "black" ,color:"green"})
                 $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"green"})
+                $(".p2").css({color:"green"})
+                $("button").css({backgroundColor:"green",color:"white"})
             })
 
 
@@ -95,6 +97,8 @@ crossorigin="anonymous"
         $(".btn3").click(function () {
                 $("body").css({backgroundColor: "black" ,color:"blue"})
                 $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"blue"})
+                $(".p3").css({color:"blue"})
+                $("button").css({backgroundColor:"blue",color:"white"})
             })    
 
 
@@ -103,8 +107,11 @@ crossorigin="anonymous"
                 $(".p4").fadeToggle(1000);
             })  
             $(".btn4").click(function () {
-                $("body").css({backgroundColor: "black" ,color:"red"})
-                $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"red"})
+                $("body").css({backgroundColor: "black" ,color:"cadetblue"})
+                $(".col1,.col2,.col3").css({backgroundColor: "black" ,color:"cadetblue"})
+                $(".p4").css({color:"cadetblue"})
+                $("button").css({backgroundColor:"cadetblue"})
+
             })    
 
 
